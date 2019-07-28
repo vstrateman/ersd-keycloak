@@ -9,10 +9,17 @@ docker run -p 8080:8080 -e KEYCLOAK_USER=<KC_MASTER_USERNAME> -e KEYCLOAK_PASSWO
 ```
 
 # Configuration
+Run the configure script provided in this repository. Please note it can be run from anywhere.  It does not need to be run from within the Keycloak container. 
 ```bash
-./configure
+# Run a Docker image that houses the configure script
+docker run -it registry.ruvos.com/ersd/ersd-keycloak
+
+# Or clone and execute
+git clone git@gitlab.ruvos.com:ersd/ersd-keycloak.git
+./ersd-keycloak/configure
 ```
-Run the configure script provided in this repository. Please note it can be run from anywhere.  It does not need to be run from within the Keycloak container. Provide it with keycloak credentials and the desired setup options, and it should perform the following:
+
+Either way, provide `configure` with keycloak credentials and the desired setup options, and it should perform the following:
 - Authenticates against the keycloak service located at the base URL you provide
 - Creates a realm of your choosing, which defaults to `ersd`
 - Creates the `admin` realm role on the newly created realm
