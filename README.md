@@ -1,7 +1,7 @@
 # ersd-keycloak
 > Keycloak for ERSD
 
-Please note this is just using [jboss/keycloak from Docker hub](https://hub.docker.com/r/jboss/keycloak/).  Go [there](https://hub.docker.com/r/jboss/keycloak/) for more information if needed.
+Please note this is using [jboss/keycloak from Docker hub](https://hub.docker.com/r/jboss/keycloak/).  Go [there](https://hub.docker.com/r/jboss/keycloak/) for more information if needed.
 
 # Run With MySQL as Database
 ```bash
